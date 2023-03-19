@@ -1,0 +1,15 @@
+@import "src/assets/styles/custom/helpes";
+
+.header {
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    
+    &--element {
+      color: red;
+      margin: 0 50px;
+      @extend .dot;
+
+    }
+  }
+}

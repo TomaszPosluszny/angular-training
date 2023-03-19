@@ -1,0 +1,80 @@
+<section>{{ owner }} {{ foterDesc.owner }} {{ foterDesc.year }}</section>
+
+<p>{{ foterDesc.owner === "Tomek" ? "super" : "niesuper" }}</p>
+<!-- {{foterDesc.owner.length"}} -->
+
+<img [src]="sunUrl" [alt]="opis" />
+<input [placeholder]="placeholder.desc1" />
+<input [placeholder]="placeholder.desc2" />
+<button [disabled]="wartosc">Kliknij mnie</button>
+<button [disabled]="owner === 'Tomek' ? true : false">kliknij mnie</button>
+
+<div [style.color]="color.blue">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi minus
+  laborum corrupti quis, consequuntur ullam enim odit ut quibusdam harum modi et
+  deserunt unde. At dolorem illo eos alias.
+</div>
+
+<div [style.color]="'red'">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi minus
+  laborum corrupti quis, consequuntur ullam enim odit ut quibusdam harum modi et
+  deserunt unde. At dolorem illo eos alias.
+</div>
+<div [ngClass]="jakaKlasa">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod laudantium
+  eveniet nam! Aut minus odio fugiat iure numquam reiciendis magnam corrupti
+  perferendis at! Quia modi ducimus molestiae, alias vitae placeat!
+</div>
+
+<div></div>
+
+<div>
+  <input #btn placeholder="Podaj wartość" />
+  <button (click)="inputVal(btn.value)">Pobierz wartość</button>
+</div>
+
+<div>
+  <input (focus)="sthOnFocus()" (blur)="sthOnBlur()" />
+</div>
+<div>
+  <input #key1 (keyup)="sthOnKeyUp(key1.value)" />
+  <input (keyup)="sthOnKeyUp1($event)" />
+  <input (keyup.enter)="sthOnKeyUp1($event)" />
+</div>
+
+<div><input [(ngModel)]="zmienna" type="text" /> {{ zmienna }}</div>
+
+<div *ngIf="showMsg">Jest teraz true</div>
+<div *ngIf="!showMsg">Jest teraz false</div>
+
+<div *ngIf="showMsg; else showValue">Jest teraz true</div>
+<ng-template #showValue> Jest teraz false</ng-template>
+
+<ng-container *ngIf="showMsg; then showWhenTrue; else showWhenFalse"
+  >Jest teraz false</ng-container
+>
+<ng-template #showWhenTrue>Kiedy jest true</ng-template>
+<ng-template #showWhenFalse>Kiedy jest true</ng-template>
+<ul>
+  <li
+    *ngFor="let user of users; let i = index; let e = even; let o = odd"
+    (click)="pokazDane(user)"
+  >
+    {{ i + 1 }} {{ e }} {{ o }} {{ user.name }}
+  </li>
+</ul>
+<div *ngIf="dane?.id">{{ dane.id }}</div>
+<div *ngIf="dane?.name">{{ dane.name }}</div>
+
+<div [ngSwitch]="num">
+  <div * ngSwitchCase="1">1</div>
+  <div * ngSwitchCase="2">2</div>
+  <div * ngSwitchCase="3">3</div>
+  <div * ngSwitchCase="4">4</div>
+</div>
+
+<div style="background-color: red; width: 200px; height: 200px" appSample1>
+  Coś wielkiego
+</div>
+jh
+<p appSample2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, odit sapiente! Quaerat eveniet dolor maxime sequi ratione nemo saepe libero quia atque cum. Nam dolor nostrum voluptate. Reprehenderit, alias esse?</p>
