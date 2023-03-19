@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { foterDesc, User } from 'src/interfaces/interfaces_custom';
 
 @Component({
@@ -7,6 +7,7 @@ import { foterDesc, User } from 'src/interfaces/interfaces_custom';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
+  @Input() mojanNazwa: string = ''
   num: number =2;
   zmienna: string = '';
   showMsg: boolean = false;
@@ -68,5 +69,5 @@ export class FooterComponent implements OnInit {
     {id: 0, name: "Slonce", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUTGSTdxFHczfuaGcZlx4N6jG1sDQQthMyEqB7Pl9x&s", alt:"Slonce"},
     {id: 1, name: "Mars", img: "https://www.shutterstock.com/image-illustration/mars-planet-3d-rendering-black-260nw-1724343382.jpg", alt:"Mars"}
   ]
-
+  parentMessage: string = "Wiadomość";
 }
