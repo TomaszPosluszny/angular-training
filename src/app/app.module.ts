@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { DirectDirective } from './direct.directive';
 import { Sample1Directive } from './directives/sample1.directive';
 import { Sample2Directive } from './directives/sample2.directive';
+import { Sample3Directive } from './directives/sample3.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { Sample2Directive } from './directives/sample2.directive';
     DirectDirective,
     Sample1Directive,
     Sample2Directive,
+    Sample3Directive,
   
   ],
   imports: [

@@ -64,5 +64,9 @@ export class FooterComponent implements OnInit {
   pokazDane(user: any) {
     this.dane = user;
   }
+  starsArray:any = [
+    {id: 0, name: "Slonce", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUTGSTdxFHczfuaGcZlx4N6jG1sDQQthMyEqB7Pl9x&s", alt:"Slonce"},
+    {id: 1, name: "Mars", img: "https://www.shutterstock.com/image-illustration/mars-planet-3d-rendering-black-260nw-1724343382.jpg", alt:"Mars"}
+  ]
 
 }
