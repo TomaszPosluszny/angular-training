@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'wsb1';
   parentMessage: string = "Wiadomość";
+
+  //TO DODAŁEM:
+  // message:string;
+   
+  // receiveMessage($event: string):void {
+  //   this.message = $event
+  // }
+
+
+  ngOnInit(){}
 }

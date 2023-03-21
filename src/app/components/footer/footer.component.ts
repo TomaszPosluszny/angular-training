@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { foterDesc, User } from 'src/interfaces/interfaces_custom';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { foterDesc, User,  } from 'src/interfaces/interfaces_custom';
+
 
 @Component({
   selector: 'app-footer',
@@ -70,4 +71,14 @@ export class FooterComponent implements OnInit {
     {id: 1, name: "Mars", img: "https://www.shutterstock.com/image-illustration/mars-planet-3d-rendering-black-260nw-1724343382.jpg", alt:"Mars"}
   ]
   parentMessage: string = "Wiadomość";
-}
+   //TO DODAŁEM: 
+   
+   message: string = "To przekazałem!!"
+   @Output() messageEvent = new EventEmitter<string>();
+   
+   sendMessage():void {
+     this.messageEvent.emit(this.message)
+   }
+ 
+ }
+
