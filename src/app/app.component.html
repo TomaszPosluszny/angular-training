@@ -1,4 +1,11 @@
 <h1>WSB</h1>
+
+<div [style.background-color] = "setColor" [style.color]="setColor2">Tomek</div>
+
+
+<button (click)="updateColor()">Kliknij</button>
+<div [ngClass]="klasaCss1">Aga</div>
+<button (click) ="updateColor2()">Zmiana koloru Css</button>
 <app-header></app-header>
 <app-footer [mojanNazwa]="parentMessage"></app-footer>
 <!-- Message: {{message}}
