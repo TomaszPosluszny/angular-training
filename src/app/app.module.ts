@@ -11,6 +11,7 @@ import { DirectDirective } from './direct.directive';
 import { Sample1Directive } from './directives/sample1.directive';
 import { Sample2Directive } from './directives/sample2.directive';
 import { Sample3Directive } from './directives/sample3.directive';
+import { FirstComponent } from './components/first/first.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Sample3Directive } from './directives/sample3.directive';
     Sample1Directive,
     Sample2Directive,
     Sample3Directive,
+    FirstComponent,
   
   ],
   imports: [

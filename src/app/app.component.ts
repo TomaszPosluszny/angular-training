@@ -21,7 +21,7 @@ export class AppComponent {
   }
   updateColor2(): void {
   	const index = Math.floor(Math.random() * this.klasaCss.length);
-  console.log(this.klasaCss[index])
+  console.log(this.klasaCss)
   this.klasaCss1 = this.klasaCss[index]
  
     
