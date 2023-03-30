@@ -15,7 +15,11 @@ export class FirstComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  tmpArr :any
   owner:{} = {}
+
+
 
   sthOnFocus(): void {
     console.log('kliknięto');
@@ -35,8 +39,23 @@ export class FirstComponent implements OnInit {
     for(i=0; i<20; i++) szostka[i] = Math.floor(Math.random() * 100) + 1;
   console.log(szostka)
  
-
-
+  
 }
   // this.klasaCss1 = this.klasaCss[index]
+
+
+  
+  genNumObj() {
+    
+for (let i = 0; i < 20; i++) {
+      var numObj = Math.floor(Math.random() * 100) + 1;
+        
+      
+
+      console.log(numObj);
+    }
+
+    return this.tmpArr;
+  }
 }
+// console.log(numObj);
