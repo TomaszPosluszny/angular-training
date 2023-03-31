@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare module "../json/data.json" {
-  const value: any;
-  export default value;
-}
+import * as data from '../json/data.json';
 
 
 @Component({
@@ -17,10 +14,21 @@ export class AngularisOKComponent implements OnInit {
   constructor() {
    
   }
+  
 
   ngOnInit(): void {
   }
 
+  name = "Marcin";
+sayHello() {
+return "Cześć " + this.name
+}
 
 
 }
+
+
+
+
+
+

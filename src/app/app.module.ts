@@ -14,6 +14,7 @@ import { Sample3Directive } from './directives/sample3.directive';
 import { FirstComponent } from './components/first/first.component';
 import { AngularisOKComponent } from './components/angularis-ok/angularis-ok.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
