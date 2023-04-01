@@ -103,3 +103,5 @@ jh
 <div>{{user.height | number: "3.3-3" }}</div>
 <div>{{user.name | slice:2:4}}</div>
 <div>{{user.date | date: "full" | uppercase}}</div>
+
+<input [(ngModel)]= "word">  {{word | addPipe }}

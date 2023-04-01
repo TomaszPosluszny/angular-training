@@ -13,7 +13,7 @@ import { Sample2Directive } from './directives/sample2.directive';
 import { Sample3Directive } from './directives/sample3.directive';
 import { FirstComponent } from './components/first/first.component';
 import { AngularisOKComponent } from './components/angularis-ok/angularis-ok.component';
-
+import { AddPipePipe } from './add-pipe.pipe'
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { AngularisOKComponent } from './components/angularis-ok/angularis-ok.com
     Sample3Directive,
     FirstComponent,
     AngularisOKComponent,
+    AddPipePipe 
   
   ],
   imports: [

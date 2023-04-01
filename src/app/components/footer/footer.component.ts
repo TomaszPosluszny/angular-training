@@ -87,6 +87,6 @@ export class FooterComponent implements OnInit {
     salary: 3000,
     height: 1.80,
   }
- 
+  word = ''
  }
 
