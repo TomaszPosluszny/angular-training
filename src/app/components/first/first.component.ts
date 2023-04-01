@@ -16,7 +16,7 @@ export class FirstComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  tmpArr :any
+  tmpArr:any 
   owner:{} = {}
 
 
@@ -53,9 +53,29 @@ for (let i = 0; i < 20; i++) {
       
 
       console.log(numObj);
+      this.tmpArr = numObj 
     }
 
     return this.tmpArr;
   }
+  public myId = "testId";
+public isDisabled = false; //zamień true na false i sprawdźy
+public isWrong = false
+
+
+count = 0;
+incrementation(){
+this.count += 1;
 }
-// console.log(numObj);
+
+
+function1(pobranaWartosc : string){
+  console.log(pobranaWartosc)
+  
+  }
+
+  public twoWayBinding = ''
+}
+
+
+

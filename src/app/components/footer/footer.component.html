@@ -92,3 +92,14 @@ jh
 {{mojanNazwa}}
 
 <button (click)="sendMessage()">Send Message</button>
+<div>{{user.name | uppercase }}</div>
+
+<div>{{user.date | date: "dd.MM.yyyy"}}</div>
+<div>{{user.salary | currency: "PLN "}}</div>
+
+<div>{{user | json }}</div>
+<div>{{user.date | date: "dd -MM -yyyy"}}</div>
+
+<div>{{user.height | number: "3.3-3" }}</div>
+<div>{{user.name | slice:2:4}}</div>
+<div>{{user.date | date: "full" | uppercase}}</div>

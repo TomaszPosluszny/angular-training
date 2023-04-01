@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { foterDesc, User,  } from 'src/interfaces/interfaces_custom';
+import { foterDesc, User, Userr  } from 'src/interfaces/interfaces_custom';
 
 
 @Component({
@@ -35,8 +35,8 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  inputVal(val: string): void {
-    console.log(val);
+  inputVal(vall: string): void {
+    console.log(vall);
   }
   sthOnFocus(): void {
     console.log('kliknięto');
@@ -79,6 +79,14 @@ export class FooterComponent implements OnInit {
    sendMessage():void {
      this.messageEvent.emit(this.message)
    }
+   user:Userr = {
+    id:1,
+    name : "Tomek",
+    familyName: "Posłuszny",
+    date: "10/02/1989",
+    salary: 3000,
+    height: 1.80,
+  }
  
  }
 

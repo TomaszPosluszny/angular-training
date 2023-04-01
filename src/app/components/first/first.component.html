@@ -4,7 +4,15 @@
   </div>
 
   <div>
-  <p>{{  tmpArr }}</p>
+    <p [innerHTML]="tmpArr"></p>
     <button (click)=" genNumObj()">Pobierz wartość</button>
   </div>
 
+  <input type="text" value="Marcin" id={{myId}} [disabled]="isDisabled">
+  <div [style.color]="isWrong ? 'yellow' : 'blue'">Przykład2</div>
+  <button (click)="incrementation()">Click</button>
+<p>{{count}}
+  <input #firstID type="text">
+  <button (click)="function1(firstID.value)">Sprawdź</button>
+
+  <input type="text" [(ngModel)]="twoWayBinding"> {{twoWayBinding}}

@@ -24,6 +24,7 @@ sayHello() {
 return "Cześć " + this.name
 }
 
+someTitle = ['tomej',' aga']
 
 }
 
